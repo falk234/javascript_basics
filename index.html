@@ -9,19 +9,26 @@
 
 <script>
 
-// Rewrite this if using the conditional operator '?':
+// Rewrite if..else using multiple ternary operators '?'.
 
-// let result;
+// For readability, it’s recommended to split the code into multiple lines.
 
-// if (a + b < 4) {
-//   result = 'Below';
+// let message;
+
+// if (login == 'Employee') {
+//   message = 'Hello';
+// } else if (login == 'Director') {
+//   message = 'Greetings';
+// } else if (login == '') {
+//   message = 'No login';
 // } else {
-//   result = 'Over';
+//   message = '';
 // }
 
-let result = (a + b < 4 )
-    ? result='Below' 
-    : result='Over';    
+let message = (login == 'Employee') ? 'Hello' :
+     (login == 'Director') ? 'Greetings' :
+     (login == '') ? 'No login' :
+     '';
 
 
 </script>
