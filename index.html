@@ -7,18 +7,18 @@
 
 <body>
     <script>
+    let number = prompt("Bitte gib eine Nummer ein");
 
-    let input = prompt ('What is the "official" name of JavaScript');
-
-    let output;
+    if (number > 0){
+        alert(1);
+    }   else if (number < 0){
+        alert(-1);
+    }   else if (number == 0){
+        alert(0);
+    }   else{
+        alert("Hier läuft etwas schief");
+    }
     
-    if (input === "ECMAScript"){
-        output="Right!"}
-        else{output="You don't know??"
-        }
-
-    alert(output);
-
     </script>
 </body>
 
