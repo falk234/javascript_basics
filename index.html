@@ -9,26 +9,31 @@
 
 <script>
 
-// Rewrite if..else using multiple ternary operators '?'.
+// Write the code using if..else which would correspond to the following switch:
 
-// For readability, it’s recommended to split the code into multiple lines.
+// switch (browser) {
+//   case 'Edge':
+//     alert( "You've got the Edge!" );
+//     break;
 
-// let message;
+//   case 'Chrome':
+//   case 'Firefox':
+//   case 'Safari':
+//   case 'Opera':
+//     alert( 'Okay we support these browsers too' );
+//     break;
 
-// if (login == 'Employee') {
-//   message = 'Hello';
-// } else if (login == 'Director') {
-//   message = 'Greetings';
-// } else if (login == '') {
-//   message = 'No login';
-// } else {
-//   message = '';
+//   default:
+//     alert( 'We hope that this page looks ok!' );
 // }
 
-let message = (login == 'Employee') ? 'Hello' :
-     (login == 'Director') ? 'Greetings' :
-     (login == '') ? 'No login' :
-     '';
+if (browser == "Edge"){
+    alert( "You've got the Edge!" );
+} else if (browser == "Chrome" || browser == "Firefox" || browser == "Safari" || browser == "Opera"){
+    alert( 'Okay we support these browsers too' );
+} else {
+    alert( 'We hope that this page looks ok!');
+}
 
 
 </script>
