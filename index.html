@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Javascript Fundamentals</title>
-</head>
-
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Functions</title>
+  </head>
 <body>
 
-<script>
+      <!-- https://www.theodinproject.com/lessons/foundations-fundamentals-part-3 -->
+      
 
-// Rewrite the code below using a single switch statement:
+  <script>
 
-// let a = +prompt('a?', '');
+// Write a function called add7 that takes one number and returns that number + 7.
 
-// if (a == 0) {
-//   alert( 0 );
-// }
-// if (a == 1) {
-//   alert( 1 );
-// }
+    // let number=5;
 
-// if (a == 2 || a == 3) {
-//   alert( '2,3' );
-// }
+    // function add7 (numb){
+    //     return numb + 7;
+    // }
+    // console.log(add7(number));
 
-let a = +prompt ("a?", '');
+// Write a function called multiply that takes 2 numbers and returns their product.
 
-switch(a){
-    case (0):
-        alert( 0 );
-        break;
-    case (1):
-        alert (1);
-        break;
-    case (2):
-    case (3):
-        alert ("2,3");
-}
+    // let number1=5;
+    // let number2=4;
 
+    // function multiply(numb1,numb2){
+    //     return numb1 * numb2;
+    // }
 
+    // console.log(multiply(number1,number2));
 
-</script>
+// Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
+
+    // myString="cooleSoCKE";
+
+    // function capitalize(string){
+    //     let firstLetter=(string.charAt(0)).toUpperCase();
+    //     let restOfString=string.slice(1);
+    //     return firstLetter + restOfString;
+    // }
+
+    // console.log(capitalize(myString));
+
+//     Write a function called lastLetter that takes a string and returns the very last letter of that string:
+//     lastLetter("abcd") should return "d"
+
+        let myString="abcde";
+
+        function lastLetter(myString){
+            return myString.substr(-1,1);
+        }
+
+        console.log(lastLetter(myString));
+
+  </script>
 </body>
-
 </html>
