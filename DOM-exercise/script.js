@@ -30,3 +30,19 @@ pinkdiv_p.textContent="ME TOO!";
 pink_div.appendChild(pinkdiv_p);
 
 container.appendChild(pink_div);
+
+btn.addEventListener('click', function (e) {
+    e.target.style.background ='blue';
+    // console.log(e.target);
+  });
+
+
+  // Jeder Button soll beim Anklicken seine ID ausgeben
+
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    })
+});
